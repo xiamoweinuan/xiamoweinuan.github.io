@@ -1,0 +1,540 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="给button加边框 . 圆角弧度 . 加阴影123456789101112131415avatarImage = [UIButton buttonWithType:UIButtonTypeCustom];//给按钮加一个白色的板框avatarImage.layer.borderColor = [[UIColor whiteColor] CGColor];avatarImage.layer.bor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIButton...">
+<meta property="og:url" content="http://yoursite.com/2016/04/13/UIButton/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="给button加边框 . 圆角弧度 . 加阴影123456789101112131415avatarImage = [UIButton buttonWithType:UIButtonTypeCustom];//给按钮加一个白色的板框avatarImage.layer.borderColor = [[UIColor whiteColor] CGColor];avatarImage.layer.bor">
+<meta property="og:updated_time" content="2016-04-13T10:03:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UIButton...">
+<meta name="twitter:description" content="给button加边框 . 圆角弧度 . 加阴影123456789101112131415avatarImage = [UIButton buttonWithType:UIButtonTypeCustom];//给按钮加一个白色的板框avatarImage.layer.borderColor = [[UIColor whiteColor] CGColor];avatarImage.layer.bor">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> UIButton... | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                UIButton...
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T17:39:26+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="给button加边框-圆角弧度-加阴影"><a href="#给button加边框-圆角弧度-加阴影" class="headerlink" title="给button加边框 . 圆角弧度 . 加阴影"></a>给button加边框 . 圆角弧度 . 加阴影</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">avatarImage = [UIButton buttonWithType:UIButtonTypeCustom];</span><br><span class="line"></span><br><span class="line">//给按钮加一个白色的板框</span><br><span class="line"></span><br><span class="line">avatarImage.layer.borderColor = [[UIColor whiteColor] CGColor];</span><br><span class="line"></span><br><span class="line">avatarImage.layer.borderWidth = 1.0f;</span><br><span class="line"></span><br><span class="line">//给按钮设置弧度,这里将按钮变成了圆形</span><br><span class="line"></span><br><span class="line">avatarImage.layer.cornerRadius = 25.0f;</span><br><span class="line"></span><br><span class="line">avatarImage.backgroundColor = [UIColor redColor];</span><br><span class="line"></span><br><span class="line">avatarImage.layer.masksToBounds = YES;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="iOS-UIButton-设置图片不变型-setImage"><a href="#iOS-UIButton-设置图片不变型-setImage" class="headerlink" title="iOS UIButton 设置图片不变型 setImage:"></a>iOS UIButton 设置图片不变型 setImage:</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[btn.imageView setContentMode:UIViewContentModeScaleAspectFill]; </span><br><span class="line"></span><br><span class="line">// 去除按钮在叠加视图中的按下延迟  </span><br><span class="line">tableView.delaysContentTouches = NO;  </span><br><span class="line"></span><br><span class="line">在设置UIButton文字和图标对齐方式的时候，需要注意：</span><br><span class="line"></span><br><span class="line">setTitleEdgeInsets和setImageEdgeInsets方法只对通过setTitle和setImage方法设置的文字和图片有效。</span><br><span class="line"></span><br><span class="line">很多人错将setBackgroundImage当成setImage使用，结果看到了一个图标被作为背景图片拉伸了。之后任怎么设置setImageEdgeInsets都看不到效果。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">下面顺便贴出一位哥们写的代码，效果不错！</span><br><span class="line"></span><br><span class="line">UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 50, 150, 50)];</span><br><span class="line"></span><br><span class="line">[button setTitle:@&quot;HHH&quot; forState:UIControlStateNormal];</span><br><span class="line"></span><br><span class="line">[button setBackgroundImage:[UIImage imageNamed:@&quot;narrowend.png&quot;] forState:UIControlStateNormal];</span><br><span class="line"></span><br><span class="line">[button setImage:[UIImage imageNamed:@&quot;panelicon.png&quot;] forState:UIControlStateNormal]; </span><br><span class="line"></span><br><span class="line">[button setImageEdgeInsets:UIEdgeInsetsMake(0.0, -20, 0.0, 0.0)];</span><br><span class="line"></span><br><span class="line">代码解释：</span><br><span class="line"></span><br><span class="line">[button setImageEdgeInsets:UIEdgeInsetsMake(&lt;#CGFloat top#向上偏移量&gt;, &lt;#CGFloat left#向左偏移量&gt;, &lt;#CGFloat bottom#向下偏移量&gt;, &lt;#CGFloat right#向右上偏移量&gt;)];</span><br><span class="line">同时还可以设置文字的偏移量：</span><br><span class="line"></span><br><span class="line">[button setTitleEdgeInsets:UIEdgeInsetsMake(&lt;#CGFloat top#&gt;, &lt;#CGFloat left#&gt;, &lt;#CGFloat bottom#&gt;, &lt;#CGFloat right#&gt;)];</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="button切图自适应"><a href="#button切图自适应" class="headerlink" title="button切图自适应"></a>button切图自适应</h1><p>以前公司切图的时候是切@2x和@3x的图的，目前是只切@3x的，图片缩小影响不大，放大就会很糊，如果直接给3倍尺寸的图，setImage方法会取三倍的，导致要么图片过大，button固定尺寸了，又会按钮响应范围过小，此时可以把图片放到Images.xcassets里边@2x里边，默认用2x的图，3x找不到的话还是会用这个图，可是，这个图的尺寸就是3x的，不知道有问题没有，先这样。</p>
+<hr>
+<h1 id="圆角button添加点击后效果"><a href="#圆角button添加点击后效果" class="headerlink" title="圆角button添加点击后效果"></a>圆角button添加点击后效果</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">UIImage *narmalImg = [CommonFuction imageWithColor:[CommonFuction colorFromHexRGB:@&quot;ffffff&quot;] size:CGSizeMake(68, 25)];</span><br><span class="line">UIImage *selectImg = [CommonFuction imageWithColor:[CommonFuction colorFromHexRGB:@&quot;f7c250&quot;] size:CGSizeMake(68, 25)];</span><br><span class="line"></span><br><span class="line">UIButton *rechargeBtn = [UIButton buttonWithType:UIButtonTypeCustom];</span><br><span class="line">rechargeBtn.frame = CGRectMake(240, 10, 68, 25);</span><br><span class="line">[rechargeBtn setTitle:@&quot;充值&quot; forState:UIControlStateNormal];</span><br><span class="line">[rechargeBtn setTitleColor:[CommonFuction colorFromHexRGB:@&quot;d14c49&quot;] forState:UIControlStateNormal];</span><br><span class="line">[rechargeBtn setTitleColor:[CommonFuction colorFromHexRGB:@&quot;ffffff&quot;] forState:UIControlStateHighlighted];</span><br><span class="line">[rechargeBtn setBackgroundImage:narmalImg forState:UIControlStateNormal];</span><br><span class="line">[rechargeBtn setBackgroundImage:selectImg forState:UIControlStateHighlighted];</span><br><span class="line">rechargeBtn.titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];</span><br><span class="line">rechargeBtn.layer.cornerRadius = 12.5f;</span><br><span class="line">rechargeBtn.layer.masksToBounds = YES;</span><br><span class="line">rechargeBtn.layer.borderWidth = 0.5;</span><br><span class="line">rechargeBtn.layer.borderColor = [CommonFuction colorFromHexRGB:@&quot;d14c49&quot;].CGColor;</span><br><span class="line">[rechargeBtn addTarget:self action:@selector(rechargeRebi) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">[rebiItemView addSubview:rechargeBtn];</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="视图圆角加阴影masksToBounds属性"><a href="#视图圆角加阴影masksToBounds属性" class="headerlink" title="视图圆角加阴影masksToBounds属性"></a>视图圆角加阴影masksToBounds属性</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">**（如果设置masksToBounds为YES，那么阴影就会无效，下面代码可以解决这个问题。通过两个layer，一个实现阴影，一个圆角图片）</span><br><span class="line">CALayer *sublayer = [CALayer layer]; </span><br><span class="line">sublayer.backgroundColor = [UIColor blueColor].CGColor; </span><br><span class="line">sublayer.shadowOffset = CGSizeMake(0, 3); </span><br><span class="line">sublayer.shadowRadius = 5.0; </span><br><span class="line">sublayer.shadowColor = [UIColor blackColor].CGColor; </span><br><span class="line">sublayer.shadowOpacity = 0.8; </span><br><span class="line">sublayer.frame = CGRectMake(30, 30, 128, 192); </span><br><span class="line">sublayer.borderColor = [UIColor blackColor].CGColor; </span><br><span class="line">sublayer.borderWidth = 2.0; </span><br><span class="line">sublayer.cornerRadius = 10.0; </span><br><span class="line">[self.view.layer addSublayer:sublayer];   //每个UIView都包括一个root layer</span><br><span class="line">CALayer *imageLayer = [CALayer layer]; </span><br><span class="line">imageLayer.frame = sublayer.bounds; </span><br><span class="line">imageLayer.cornerRadius = 10.0; </span><br><span class="line">imageLayer.contents = (id) [UIImage imageNamed:@&quot;BattleMapSplashScreen.jpg&quot;].CGImage; </span><br><span class="line">imageLayer.masksToBounds = YES;    //如果背景是图片的话设置layer圆角后图片不会更随圆角，需要设置masksToBounds为YES</span><br><span class="line">[sublayer addSublayer:imageLayer];</span><br><span class="line">.masksToBounds : 很重要的属性，可以用此属性来防止子元素大小溢出父元素，如若防止溢出，请设为 true</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/13/开篇/" rel="next" title="开篇">
+                <i class="fa fa-chevron-left"></i> 开篇
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/13/UILabel/" rel="prev" title="UILabel">
+                UILabel <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="小沫沫" />
+          <p class="site-author-name" itemprop="name">小沫沫</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#给button加边框-圆角弧度-加阴影"><span class="nav-number">1.</span> <span class="nav-text">给button加边框 . 圆角弧度 . 加阴影</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iOS-UIButton-设置图片不变型-setImage"><span class="nav-number">2.</span> <span class="nav-text">iOS UIButton 设置图片不变型 setImage:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#button切图自适应"><span class="nav-number">3.</span> <span class="nav-text">button切图自适应</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#圆角button添加点击后效果"><span class="nav-number">4.</span> <span class="nav-text">圆角button添加点击后效果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#视图圆角加阴影masksToBounds属性"><span class="nav-number">5.</span> <span class="nav-text">视图圆角加阴影masksToBounds属性</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小沫沫</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,11 +1,86 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+
+
+
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -14,208 +89,584 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description">
-  
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
-  
-  
-      <link href="//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
-  
-  
-      <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-      <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-      <style> .article { opacity: 0;} </style>
-  
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    
-    
-  
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  
-  <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-      var yiliaConfig = {
-          fancybox: true,
-          animate: true,
-          isHome: true,
-          isPost: false,
-          isArchive: false,
-          isTag: false,
-          isCategory: false,
-          open_in_new: false,
-      }
-  </script>
 
-  
-      <script>
-          yiliaConfig.rootUrl = "/";
-      </script>
-  
 
-  
 
-  
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> Hexo </title>
 </head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">小沫沫</a></h1>
-        </hgroup>
 
-        
-                
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
 
 
-        
 
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <li id="Email"><a class="Email" target="_blank" href="mailto:gaoshuangone@qq.com" title="Email"></a></li>
-                            
-                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/xiamoweinuan" title="GitHub"></a></li>
-                            
-                                <li id="RSS"><a class="RSS" target="_blank" href="/404" title="RSS"></a></li>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
 
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">iOS</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">小沫沫</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">小沫沫</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <li id="Email"><a class="Email" target="_blank" href="mailto:gaoshuangone@qq.com" title="Email"></a></li>
-                            
-                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/xiamoweinuan" title="GitHub"></a></li>
-                            
-                                <li id="RSS"><a class="RSS" target="_blank" href="/404" title="RSS"></a></li>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-</nav>
-      <div class="body-wrap">
-  
-    <article id="post-hex" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/12/hex/" class="article-date">
-      <time datetime="2016-04-12T09:14:33.000Z" itemprop="datePublished">2016-04-12</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/12/hex/">hex</a>
-    </h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
   
 
-      </header>
+  
+    <ul id="menu" class="menu">
       
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
     
-    <div class="article-entry" itemprop="articleBody">
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/13/UILabel萍方体/" itemprop="url">
+                  萍方体
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T18:05:31+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
           
-        <h2 id="Github-Pages-（第一步）"><a href="#Github-Pages-（第一步）" class="headerlink" title="Github Pages （第一步）"></a>Github Pages （第一步）</h2><p>Github Pages免费的静态站点，其特点：免费托管、自带主题、支持自制页面等。<br>创建Github Pages比较简单，只要你有一个github账号在创建一个仓库就行了，但是这个仓库是有规则的，其格式必须为：yourusername.github.io。然后根据提示一直下一步即可，非常简单。<br><img src="http://img.blog.csdn.net/20160411164106302" alt="这里写图片描述"></p>
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.第一步找到你想用的字体的 ttf 格式。加入到你的工程的resouce目录下。</p>
+<p><img src="http://img.blog.csdn.net/20160413175956704" alt="这里写图片描述"></p>
+<p>2.在工程的plist中AddRow，“Fonts provided by application” ，然后添加key为item0，value为你刚才加入的testFont.ttf 。<br>是这样，可以添加多个，使用的时候写对应字体名字就行。</p>
+<p>3.在你的工程就可以直接用了。xx.font = [UIFont fontWithName:@”testFont” size:20.0]；<br>注意：<br>在程序中先加入这段代码，运行，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[html] view plain copy</span><br><span class="line">NSArray *familyNames =[[NSArray alloc]initWithArray:[UIFont familyNames]];  </span><br><span class="line">NSArray *fontNames;  </span><br><span class="line">NSInteger indFamily, indFont;  </span><br><span class="line">NSLog(@&quot;[familyNames count]===%d&quot;,[familyNames count]);  </span><br><span class="line">for(indFamily=0;indFamily&lt;[familyNames count];++indFamily)  </span><br><span class="line"></span><br><span class="line">&#123;  </span><br><span class="line">NSLog(@&quot;Family name: %@&quot;, [familyNames objectAtIndex:indFamily]);  </span><br><span class="line">fontNames =[[NSArray alloc]initWithArray:[UIFont fontNamesForFamilyName:[familyNames objectAtIndex:indFamily]]];  </span><br><span class="line"></span><br><span class="line">for(indFont=0; indFont&lt;[fontNames count]; ++indFont)  </span><br><span class="line"></span><br><span class="line">&#123;  </span><br><span class="line">NSLog(@&quot;Font name: %@&quot;,[fontNames objectAtIndex:indFont]);  </span><br><span class="line"></span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line">[fontNames release];  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line">[familyNames release];</span><br></pre></td></tr></table></figure>
+<p>查看console，以上程式会列出所有的字型，当然也包含“Fonts provided by application”所加的字型，但请注意，名字可能差距很大，要自己找一下<br>例:<br>testFont.ttf   , 加入Fonts provided by application<br>执行以上程式会列出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">2012-10-20 21:56:21.321 MyAnimationTest[5397:c07]  Family name: HAKUYOGuiFanZi3500  </span><br><span class="line">2012-10-20 21:56:21.321 MyAnimationTest[5397:c07]     Font name: HAKUYOGuiFanZi3500  </span><br><span class="line">2012-10-20 21:56:21.322 MyAnimationTest[5397:c07] Family name: Didot  </span><br><span class="line">2012-10-20 21:56:21.322 MyAnimationTest[5397:c07]     Font name: Didot-Italic  </span><br><span class="line">2012-10-20 21:56:21.322 MyAnimationTest[5397:c07]     Font name: Didot  </span><br><span class="line">2012-10-20 21:56:21.323 MyAnimationTest[5397:c07]     Font name: Didot-Bold  </span><br><span class="line">2012-10-20 21:56:21.323 MyAnimationTest[5397:c07] Family name: Bodoni 72 S</span><br><span class="line">2012-10-20 21:56:21.323 MyAnimationTest[5397:c07]     Font name:</span><br></pre></td></tr></table></figure>
+<p>要使用字体的Family name，而不是字体的文件名，弄错了将无法看到效果。<br>注意还有一个重要的是： 在“Copy Boundle Resources”中加入刚才添加的字体文件xxx.ttf ，如下：</p>
+<p><img src="http://img.blog.csdn.net/20160413180129966" alt="这里写图片描述"></p>
+<p>下面是萍方体type，链接下载<a href="http://download.csdn.net/detail/u010742414/9416982" target="_blank" rel="external">http://download.csdn.net/detail/u010742414/9416982</a><br><img src="http://img.blog.csdn.net/20160413180222394" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20160413180354521" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20160413180408818" alt="这里写图片描述"></p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/13/UILabel/" itemprop="url">
+                  UILabel
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T17:51:09+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br>1.第一步找到你想用的字体的 ttf 格式。加入到你的工程的<span style="color:rgb(51,51,51)">resouce目录下。</span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"><img src="http://img.my.csdn.net/uploads/201210/20/1350742419_3876.png" alt="" style="border:none; max-width:100%"><br><br></span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">2.在工程的plist中AddRow，“Fonts provided by application” ，然后添加key为item0，value为你刚才加入的testFont.ttf 。</span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px; color:rgb(51,51,51)"><br>是这样，可以添加多个，使用的时候写对应字体名字就行。<br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">3.在你的工程就可以直接用了。xx.font = [UIFont fontWithName:@&quot;testFont&quot; size:20.0]；</span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"><br><br></span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">注意：</span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">在程序中先加入这段代码，运行，</span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"></span><br></p><br><div class="dp-highlighter bg_html" style="font-family:Consolas,'Courier New',Courier,mono,serif; width:936.531px; overflow:auto; padding-top:1px; line-height:26px; margin:18px 0px!important; background-color:rgb(231,229,220)"><br><div class="bar" style="padding-left:45px"><br><div class="tools" style="padding:3px 8px 10px 10px; font-size:9px; line-height:normal; font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:silver; border-left-width:3px; border-left-style:solid; border-left-color:rgb(108,226,108); background-color:rgb(248,248,248)"><br><strong>[html]</strong>&nbsp;<a target="_blank" href="http://blog.csdn.net/justinjing0612/article/details/8093985#" class="ViewSource" title="view plain" style="color:rgb(160,160,160); text-decoration:none; border:none; padding:1px; margin:0px 10px 0px 0px; font-size:9px; display:inline-block; width:16px; height:16px; text-indent:-2000px; background-color:inherit">view plain</a><span>&nbsp;<a target="_blank" href="http://blog.csdn.net/justinjing0612/article/details/8093985#" class="CopyToClipboard" title="copy" style="color:rgb(160,160,160); text-decoration:none; border:none; padding:1px; margin:0px 10px 0px 0px; font-size:9px; display:inline-block; width:16px; height:16px; text-indent:-2000px; background-color:inherit">copy</a></span><br><div style="position:absolute; left:679px; top:889px; width:18px; height:18px; z-index:99"><br></div><br><span></span><br></div><br></div><br><ol start="1" class="dp-xml" style="padding:0px; border:none; color:rgb(92,92,92); margin:0px 0px 1px 45px!important; background-color:rgb(255,255,255)"><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit"><span style="margin:0px; padding:0px; border:none; background-color:inherit">NSArray&nbsp;<em></em></span><span class="attribute" style="margin:0px; padding:0px; border:none; color:red; background-color:inherit">familyNames</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">&nbsp;=[[NSArray&nbsp;alloc]initWithArray:[UIFont&nbsp;familyNames]];&nbsp;&nbsp;</span></span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;NSArray&nbsp;fontNames;&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;NSInteger&nbsp;indFamily,&nbsp;indFont;&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;NSLog(@&quot;[familyNames&nbsp;count]===%d&quot;,[familyNames&nbsp;count]);&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;for(<span class="attribute" style="margin:0px; padding:0px; border:none; color:red; background-color:inherit">indFamily</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">=</span><span class="attribute-value" style="margin:0px; padding:0px; border:none; color:blue; background-color:inherit">0</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">;indFamily</span><span class="tag" style="margin:0px; padding:0px; border:none; color:rgb(153,51,0); font-weight:bold; background-color:inherit">&lt;</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">[familyNames&nbsp;count];++indFamily)&nbsp;&nbsp;</span></span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">{&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;NSLog(@&quot;Family&nbsp;name:&nbsp;%@&quot;,&nbsp;[familyNames&nbsp;objectAtIndex:indFamily]);&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="attribute" style="margin:0px; padding:0px; border:none; color:red; background-color:inherit">fontNames</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">&nbsp;=[[NSArray&nbsp;alloc]initWithArray:[UIFont&nbsp;fontNamesForFamilyName:[familyNames&nbsp;objectAtIndex:indFamily]]];&nbsp;&nbsp;</span></span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;for(<span class="attribute" style="margin:0px; padding:0px; border:none; color:red; background-color:inherit">indFont</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">=</span><span class="attribute-value" style="margin:0px; padding:0px; border:none; color:blue; background-color:inherit">0</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">;&nbsp;indFont</span><span class="tag" style="margin:0px; padding:0px; border:none; color:rgb(153,51,0); font-weight:bold; background-color:inherit">&lt;</span><span style="margin:0px; padding:0px; border:none; background-color:inherit">[fontNames&nbsp;count];&nbsp;++indFont)&nbsp;&nbsp;</span></span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NSLog(@&quot;Font&nbsp;name:&nbsp;%@&quot;,[fontNames&nbsp;objectAtIndex:indFont]);&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;[fontNames&nbsp;release];&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">}&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">[familyNames&nbsp;release];&nbsp;&nbsp;</span><br></li><br></ol><br></div><br><br style="font-family:Arial; font-size:14px; line-height:26px"><br><br style="font-family:Arial; font-size:14px; line-height:26px"><br><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">查看console，以上程式会列出所有的字型，当然也包含“Fonts provided by application”所加的字型，但请注意，名字可能差距很大，要自己找一下</span><br style="color:rgb(51,51,51)"><br><span style="color:rgb(51,51,51)">例:</span><br style="color:rgb(51,51,51)"><br><span style="color:rgb(51,51,51)">&nbsp; &nbsp; &nbsp; testFont.ttf &nbsp; , 加入Fonts provided by application</span><br style="color:rgb(51,51,51)"><br><span style="color:rgb(51,51,51)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 执行以上程式会列出</span><br style="color:rgb(51,51,51)"><br><br></p><br><div class="dp-highlighter bg_html" style="font-family:Consolas,'Courier New',Courier,mono,serif; width:936.531px; overflow:auto; padding-top:1px; line-height:26px; margin:18px 0px!important; background-color:rgb(231,229,220)"><br><div class="bar" style="padding-left:45px"><br><div class="tools" style="padding:3px 8px 10px 10px; font-size:9px; line-height:normal; font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; color:silver; border-left-width:3px; border-left-style:solid; border-left-color:rgb(108,226,108); background-color:rgb(248,248,248)"><br><strong>[html]</strong>&nbsp;<a target="_blank" href="http://blog.csdn.net/justinjing0612/article/details/8093985#" class="ViewSource" title="view plain" style="color:rgb(160,160,160); text-decoration:none; border:none; padding:1px; margin:0px 10px 0px 0px; font-size:9px; display:inline-block; width:16px; height:16px; text-indent:-2000px; background-color:inherit">view plain</a><span>&nbsp;<a target="_blank" href="http://blog.csdn.net/justinjing0612/article/details/8093985#" class="CopyToClipboard" title="copy" style="color:rgb(160,160,160); text-decoration:none; border:none; padding:1px; margin:0px 10px 0px 0px; font-size:9px; display:inline-block; width:16px; height:16px; text-indent:-2000px; background-color:inherit">copy</a></span><br><div style="position:absolute; left:679px; top:1492px; width:18px; height:18px; z-index:99"><br></div><br><span></span><br></div><br></div><br><ol start="1" class="dp-xml" style="padding:0px; border:none; color:rgb(92,92,92); margin:0px 0px 1px 45px!important; background-color:rgb(255,255,255)"><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit"><span style="margin:0px; padding:0px; border:none; background-color:inherit">2012-10-20&nbsp;21:56:21.321&nbsp;MyAnimationTest[5397:c07]&nbsp;&nbsp;Family&nbsp;name:&nbsp;HAKUYOGuiFanZi3500&nbsp;&nbsp;</span></span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.321&nbsp;MyAnimationTest[5397:c07]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font&nbsp;name:&nbsp;HAKUYOGuiFanZi3500&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.322&nbsp;MyAnimationTest[5397:c07]&nbsp;Family&nbsp;name:&nbsp;Didot&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.322&nbsp;MyAnimationTest[5397:c07]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font&nbsp;name:&nbsp;Didot-Italic&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.322&nbsp;MyAnimationTest[5397:c07]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font&nbsp;name:&nbsp;Didot&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.323&nbsp;MyAnimationTest[5397:c07]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font&nbsp;name:&nbsp;Didot-Bold&nbsp;&nbsp;</span><br></li><br><li class="alt" style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; color:inherit; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.323&nbsp;MyAnimationTest[5397:c07]&nbsp;Family&nbsp;name:&nbsp;Bodoni&nbsp;72&nbsp;Smallcaps&nbsp;&nbsp;</span><br></li><br><li style="border-style:none none none solid; border-left-width:3px; border-left-color:rgb(108,226,108); list-style:decimal-leading-zero outside; line-height:18px; margin:0px!important; padding:0px 3px 0px 10px!important; background-color:rgb(248,248,248)"><br><span style="margin:0px; padding:0px; border:none; color:black; background-color:inherit">2012-10-20&nbsp;21:56:21.323&nbsp;MyAnimationTest[5397:c07]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Font&nbsp;name:&nbsp;BodoniSvtyTwoSCITCTT-Book&nbsp;&nbsp;</span><br></li><br></ol><br></div><br><span style="font-family:Arial; font-size:14px; line-height:26px"></span><span style="font-family:Arial; font-size:14px; line-height:26px; color:rgb(51,51,51)">要使用字体的Family name，而不是字体的文件名，弄错了将无法看到效果。</span><br style="font-family:Arial; font-size:14px; line-height:26px"><br><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">注意还有一个重要的是： 在“Copy Boundle Resources”中加入刚才添加的字体文件xxx.ttf ，如下：</span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"><img src="http://img.my.csdn.net/uploads/201210/20/1350742524_8251.png" alt="" style="border:none; max-width:100%"></span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"><br><br></span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)">下面是萍方体type，链接下载<a target="_blank" href="http://download.csdn.net/detail/u010742414/9416982">http://download.csdn.net/detail/u010742414/9416982</a></span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"><img src="http://img.blog.csdn.net/20160125125839013?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""><img src="http://img.blog.csdn.net/20160125125856352?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""><img src="http://img.blog.csdn.net/20160125125913039?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""><br><br></span><br></p><br><p style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; font-family:Arial; font-size:14px; line-height:26px"><br><span style="color:rgb(51,51,51)"><br><br></span><br></p>
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/13/UIButton/" itemprop="url">
+                  UIButton...
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T17:39:26+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="给button加边框-圆角弧度-加阴影"><a href="#给button加边框-圆角弧度-加阴影" class="headerlink" title="给button加边框 . 圆角弧度 . 加阴影"></a>给button加边框 . 圆角弧度 . 加阴影</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">avatarImage = [UIButton buttonWithType:UIButtonTypeCustom];</span><br><span class="line"></span><br><span class="line">//给按钮加一个白色的板框</span><br><span class="line"></span><br><span class="line">avatarImage.layer.borderColor = [[UIColor whiteColor] CGColor];</span><br><span class="line"></span><br><span class="line">avatarImage.layer.borderWidth = 1.0f;</span><br><span class="line"></span><br><span class="line">//给按钮设置弧度,这里将按钮变成了圆形</span><br><span class="line"></span><br><span class="line">avatarImage.layer.cornerRadius = 25.0f;</span><br><span class="line"></span><br><span class="line">avatarImage.backgroundColor = [UIColor redColor];</span><br><span class="line"></span><br><span class="line">avatarImage.layer.masksToBounds = YES;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="iOS-UIButton-设置图片不变型-setImage"><a href="#iOS-UIButton-设置图片不变型-setImage" class="headerlink" title="iOS UIButton 设置图片不变型 setImage:"></a>iOS UIButton 设置图片不变型 setImage:</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[btn.imageView setContentMode:UIViewContentModeScaleAspectFill]; </span><br><span class="line"></span><br><span class="line">// 去除按钮在叠加视图中的按下延迟  </span><br><span class="line">tableView.delaysContentTouches = NO;  </span><br><span class="line"></span><br><span class="line">在设置UIButton文字和图标对齐方式的时候，需要注意：</span><br><span class="line"></span><br><span class="line">setTitleEdgeInsets和setImageEdgeInsets方法只对通过setTitle和setImage方法设置的文字和图片有效。</span><br><span class="line"></span><br><span class="line">很多人错将setBackgroundImage当成setImage使用，结果看到了一个图标被作为背景图片拉伸了。之后任怎么设置setImageEdgeInsets都看不到效果。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">下面顺便贴出一位哥们写的代码，效果不错！</span><br><span class="line"></span><br><span class="line">UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 50, 150, 50)];</span><br><span class="line"></span><br><span class="line">[button setTitle:@&quot;HHH&quot; forState:UIControlStateNormal];</span><br><span class="line"></span><br><span class="line">[button setBackgroundImage:[UIImage imageNamed:@&quot;narrowend.png&quot;] forState:UIControlStateNormal];</span><br><span class="line"></span><br><span class="line">[button setImage:[UIImage imageNamed:@&quot;panelicon.png&quot;] forState:UIControlStateNormal]; </span><br><span class="line"></span><br><span class="line">[button setImageEdgeInsets:UIEdgeInsetsMake(0.0, -20, 0.0, 0.0)];</span><br><span class="line"></span><br><span class="line">代码解释：</span><br><span class="line"></span><br><span class="line">[button setImageEdgeInsets:UIEdgeInsetsMake(&lt;#CGFloat top#向上偏移量&gt;, &lt;#CGFloat left#向左偏移量&gt;, &lt;#CGFloat bottom#向下偏移量&gt;, &lt;#CGFloat right#向右上偏移量&gt;)];</span><br><span class="line">同时还可以设置文字的偏移量：</span><br><span class="line"></span><br><span class="line">[button setTitleEdgeInsets:UIEdgeInsetsMake(&lt;#CGFloat top#&gt;, &lt;#CGFloat left#&gt;, &lt;#CGFloat bottom#&gt;, &lt;#CGFloat right#&gt;)];</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="button切图自适应"><a href="#button切图自适应" class="headerlink" title="button切图自适应"></a>button切图自适应</h1><p>以前公司切图的时候是切@2x和@3x的图的，目前是只切@3x的，图片缩小影响不大，放大就会很糊，如果直接给3倍尺寸的图，setImage方法会取三倍的，导致要么图片过大，button固定尺寸了，又会按钮响应范围过小，此时可以把图片放到Images.xcassets里边@2x里边，默认用2x的图，3x找不到的话还是会用这个图，可是，这个图的尺寸就是3x的，不知道有问题没有，先这样。</p>
+<hr>
+<h1 id="圆角button添加点击后效果"><a href="#圆角button添加点击后效果" class="headerlink" title="圆角button添加点击后效果"></a>圆角button添加点击后效果</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">UIImage *narmalImg = [CommonFuction imageWithColor:[CommonFuction colorFromHexRGB:@&quot;ffffff&quot;] size:CGSizeMake(68, 25)];</span><br><span class="line">UIImage *selectImg = [CommonFuction imageWithColor:[CommonFuction colorFromHexRGB:@&quot;f7c250&quot;] size:CGSizeMake(68, 25)];</span><br><span class="line"></span><br><span class="line">UIButton *rechargeBtn = [UIButton buttonWithType:UIButtonTypeCustom];</span><br><span class="line">rechargeBtn.frame = CGRectMake(240, 10, 68, 25);</span><br><span class="line">[rechargeBtn setTitle:@&quot;充值&quot; forState:UIControlStateNormal];</span><br><span class="line">[rechargeBtn setTitleColor:[CommonFuction colorFromHexRGB:@&quot;d14c49&quot;] forState:UIControlStateNormal];</span><br><span class="line">[rechargeBtn setTitleColor:[CommonFuction colorFromHexRGB:@&quot;ffffff&quot;] forState:UIControlStateHighlighted];</span><br><span class="line">[rechargeBtn setBackgroundImage:narmalImg forState:UIControlStateNormal];</span><br><span class="line">[rechargeBtn setBackgroundImage:selectImg forState:UIControlStateHighlighted];</span><br><span class="line">rechargeBtn.titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];</span><br><span class="line">rechargeBtn.layer.cornerRadius = 12.5f;</span><br><span class="line">rechargeBtn.layer.masksToBounds = YES;</span><br><span class="line">rechargeBtn.layer.borderWidth = 0.5;</span><br><span class="line">rechargeBtn.layer.borderColor = [CommonFuction colorFromHexRGB:@&quot;d14c49&quot;].CGColor;</span><br><span class="line">[rechargeBtn addTarget:self action:@selector(rechargeRebi) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">[rebiItemView addSubview:rechargeBtn];</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="视图圆角加阴影masksToBounds属性"><a href="#视图圆角加阴影masksToBounds属性" class="headerlink" title="视图圆角加阴影masksToBounds属性"></a>视图圆角加阴影masksToBounds属性</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">**（如果设置masksToBounds为YES，那么阴影就会无效，下面代码可以解决这个问题。通过两个layer，一个实现阴影，一个圆角图片）</span><br><span class="line">CALayer *sublayer = [CALayer layer]; </span><br><span class="line">sublayer.backgroundColor = [UIColor blueColor].CGColor; </span><br><span class="line">sublayer.shadowOffset = CGSizeMake(0, 3); </span><br><span class="line">sublayer.shadowRadius = 5.0; </span><br><span class="line">sublayer.shadowColor = [UIColor blackColor].CGColor; </span><br><span class="line">sublayer.shadowOpacity = 0.8; </span><br><span class="line">sublayer.frame = CGRectMake(30, 30, 128, 192); </span><br><span class="line">sublayer.borderColor = [UIColor blackColor].CGColor; </span><br><span class="line">sublayer.borderWidth = 2.0; </span><br><span class="line">sublayer.cornerRadius = 10.0; </span><br><span class="line">[self.view.layer addSublayer:sublayer];   //每个UIView都包括一个root layer</span><br><span class="line">CALayer *imageLayer = [CALayer layer]; </span><br><span class="line">imageLayer.frame = sublayer.bounds; </span><br><span class="line">imageLayer.cornerRadius = 10.0; </span><br><span class="line">imageLayer.contents = (id) [UIImage imageNamed:@&quot;BattleMapSplashScreen.jpg&quot;].CGImage; </span><br><span class="line">imageLayer.masksToBounds = YES;    //如果背景是图片的话设置layer圆角后图片不会更随圆角，需要设置masksToBounds为YES</span><br><span class="line">[sublayer addSublayer:imageLayer];</span><br><span class="line">.masksToBounds : 很重要的属性，可以用此属性来防止子元素大小溢出父元素，如若防止溢出，请设为 true</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/13/开篇/" itemprop="url">
+                  开篇
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T17:04:53+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>两天时间，在朋友帮助下，用github pages+hexo，搭建了自己的博客，设置了主题，目前主题还有些功能没办法实现，hexo，唉，隔行如隔山啊，有时间要好好好搞搞。以前博客用过51cto，博客园等，这次是csdn，csdn上边广告有些多，从网站进去，到点到我的博客列表，至少好好几层，也没有转载功能，感觉好麻烦，程序猿嘛，总喜欢些自己的东西，好不好是其次。</p>
+<p>作为程序员，应该技术共享，帮助更多的人，我只是个小菜鸟而已，本博客目的是方便写程序时候资料方便查阅，至于转载，版权什么的，我也没有太在意，至于转载的文章，如果可以，我尽量会标注原作者，以及链接，见谅。</p>
+<p>面向对象面向君，不负代码不负卿。</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/12/hex/" itemprop="url">
+                  hex
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-12T17:14:33+08:00" content="2016-04-12">
+              2016-04-12
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Github-Pages-（第一步）"><a href="#Github-Pages-（第一步）" class="headerlink" title="Github Pages （第一步）"></a>Github Pages （第一步）</h2><p>Github Pages免费的静态站点，其特点：免费托管、自带主题、支持自制页面等。<br>创建Github Pages比较简单，只要你有一个github账号在创建一个仓库就行了，但是这个仓库是有规则的，其格式必须为：yourusername.github.io。然后根据提示一直下一步即可，非常简单。<br><img src="http://img.blog.csdn.net/20160411164106302" alt="这里写图片描述"></p>
 <h2 id="HEXO（第二步）"><a href="#HEXO（第二步）" class="headerlink" title="HEXO（第二步）"></a>HEXO（第二步）</h2><ol>
 <li>安装</li>
 </ol>
@@ -285,59 +736,99 @@
 <p>$  hexo deploy   提交</p>
 </blockquote>
 
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/11/hello-world/" class="article-date">
-      <time datetime="2016-04-11T08:26:04.000Z" itemprop="datePublished">2016-04-11</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/11/hello-world/" itemprop="url">
+                  Hello World
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-04-11T16:26:04+08:00" content="2016-04-11">
+              2016-04-11
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -347,59 +838,97 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-text" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/17/text/" class="article-date">
-      <time datetime="2016-01-17T14:48:52.000Z" itemprop="datePublished">2016-01-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/17/text/">markdown-demo</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
           
-        <p>这是 <em>斜体</em>，这是 <strong>粗体</strong>，这是<del>删除线</del></p>
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/17/text/" itemprop="url">
+                  markdown-demo
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-01-17T22:48:52+08:00" content="2016-01-17">
+              2016-01-17
+            </time>
+          </span>
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这是 <em>斜体</em>，这是 <strong>粗体</strong>，这是<del>删除线</del></p>
 <h1 id="这是一个一级标题-h1"><a href="#这是一个一级标题-h1" class="headerlink" title="这是一个一级标题 h1"></a>这是一个一级标题 h1</h1><h2 id="这是一个二级标题-h2"><a href="#这是一个二级标题-h2" class="headerlink" title="这是一个二级标题 h2"></a>这是一个二级标题 h2</h2><h3 id="这是一个三级标题-h3"><a href="#这是一个三级标题-h3" class="headerlink" title="这是一个三级标题 h3"></a>这是一个三级标题 h3</h3><h4 id="这是一个四级标题-h4"><a href="#这是一个四级标题-h4" class="headerlink" title="这是一个四级标题 h4"></a>这是一个四级标题 h4</h4><h5 id="这是一个五级标题-h5"><a href="#这是一个五级标题-h5" class="headerlink" title="这是一个五级标题 h5"></a>这是一个五级标题 h5</h5><h6 id="这是一个六级标题-h6"><a href="#这是一个六级标题-h6" class="headerlink" title="这是一个六级标题 h6"></a>这是一个六级标题 h6</h6><ul>
 <li>无序列表项 一</li>
 <li>无序列表项 二</li>
@@ -508,99 +1037,218 @@
 <p>世界是大海，每个人是一只容量基本确定的碗，他的幸福便是碗里所盛的海水。我看见许多可怜的小碗在海里拼命翻腾，为的是舀到更多的水，而那为数不多的大碗则很少动作，看去几乎是静止的。</p>
 <p>人很难估量自己天赋的大小，因为当你的潜能尚未实现时，你自己是不知道的。那么，管它是大是小，干脆不要去估量。你可以做到的是逐渐认清自己天赋的类型，朝那个方向努力，把它用好，让它开花结果。只要你这样做，就能最大限度地实现你的潜能。遗憾的是，人们往往受环境和风尚的支配，在错误的方向上折腾，结果就把自己天赋总量中的一大部分荒废掉了。</p>
 
+          
+        
       
     </div>
     
-    <div class="article-info article-info-index">
+    <div>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
+  </section>
 
   
-  
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                &copy; 2016 小沫沫
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE
-            </div>
+
+
+          </div>
+          
+
+
+          
+
         </div>
         
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
-                            <span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>, </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="小沫沫" />
+          <p class="site-author-name" itemprop="name">小沫沫</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
         
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
     </div>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
+  </aside>
 
 
+        
+      </div>
+    </main>
 
-
-<div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小沫沫</span>
 </div>
 
-    <script src="//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
 </body>
 </html>
